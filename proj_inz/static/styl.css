@@ -1,0 +1,90 @@
+body {
+    background: url(tlo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+
+  .input, .button{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px solid black;
+    font-size: 15px;
+    
+  }
+
+  .button{
+    font-weight: bold;
+ 
+  }
+  .input{
+    width: 300px;
+ 
+  }
+
+  .button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+  }
+  .input:hover{
+    background-color: rgb(255, 255, 255);
+  }
+
+  #frcntr{
+      text-align: center;
+  }
+
+#impg{
+      width: 80px;
+      margin-bottom: -30px;
+  }
+
+#klmn{
+ 
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
+#rw{
+    display: inline-block
+}
+
+#city{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dt{
+    font-style: italic;
+}
+
+#tmp{
+    margin-top: 15px;
+    font-size: 30px;
+}
+#cotr{
+    font-size: 15px;
+}
+
+#clos{
+    float: right;
+    margin-left: -50px;
+}
+
+#alrt{
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+}

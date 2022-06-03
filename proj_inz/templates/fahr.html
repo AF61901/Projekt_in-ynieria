@@ -1,0 +1,43 @@
+{% extends "szablon.html" %}
+
+{% block content %}
+<a href="{{ url_for('indexget') }}"><button class="button">
+    Zamień na jsystem metryczny
+</button></a>
+{% endblock content %}
+
+{% block us %}
+                    {% for pogoda in pogoda_dane %}
+                    <div class="col-6 col-md-2 col-sm-4" id="klmn">
+                        <div class="col">
+                        <span id="city">{{ pogoda.city }}</span> <span id="cotr">{{ pogoda.country }}</span> 
+                            <a href="{{ url_for('usunf', name=(pogoda.city)) }}"><button id="clos" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                        <p><span id="dt">{{ today }}{{ pogoda.date }}</span></p>
+                                <figure>
+                                    <img src="http://openweathermap.org/img/w/{{ pogoda.icon }}.png" alt="Image" id="impg">
+                                </figure>   
+                                <span>{{ pogoda.description }}</span>
+                       
+                                    <p>
+                                        <span id="tmp">{{ pogoda.temperature }} ° F</span>
+                                        
+                                    </p>
+                                    <p>
+                                        <span>Wschód: {{ pogoda.sunrise }} </span>
+                                    </p>
+                                    <p>
+                                        <span>Zachód: {{ pogoda.sunset }} </span>
+                                    </p>
+                                    <p>
+                                        <span>Ciśnienie: {{ pogoda.pressure }} hPa</span>
+                                    </p><p>
+                                        <span>Wiatr: {{ pogoda.wind }} mph</span>
+                                        
+                                    </p>
+                                  
+                                
+                        </div>
+                    </div>
+                {% endfor %}
+                {% endblock %}
+
